@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-RUN apt-get update && apt-get install -y apt-utils build-essential wget apt-transport-https curl
+RUN apt-get update && apt-get install -y apt-utils build-essential wget apt-transport-https curl git
 
 RUN wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 RUN dpkg -i packages-microsoft-prod.deb && apt-get update
