@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y apt-utils build-essential wget apt-tran
 
 RUN wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 RUN dpkg -i packages-microsoft-prod.deb && apt-get update
-RUN apt-get install -y dotnet-sdk-2.1
+RUN apt-get install -y dotnet-sdk-2.2
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
 
